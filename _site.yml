@@ -1,6 +1,6 @@
-name: "Palmer Penguins Data Exploration"
+name: "Index"
 navbar:
-  title: "Index"
+  title: "Palmer Penguins Plots"
   left:
     - text: "single_trait"
       href: single_trait.html
