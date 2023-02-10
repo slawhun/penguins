@@ -1,5 +1,5 @@
 ---
-title: "Penguins Data Markdown"
+title: "Palmer Penguins Data Plots"
 author: "Sarah Lawhun"
 date: "2023-02-09"
 output: html_document
