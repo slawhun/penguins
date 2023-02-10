@@ -1,0 +1,57 @@
+---
+title: "Penguins Data Markdown"
+author: "Sarah Lawhun"
+date: "2023-02-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+![](https://news.stonybrook.edu/wp-content/uploads/2022/01/gentoo-penguins.jpg){width=40%}
+
+### Data
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+
+```{r, eval=FALSE}
+?
+view(penguins)
+```
+```{r}
+dim(penguins)
+```
+```{r}
+colnames(penguins)
+```
+
+### Single trait distribution
+
+```{r}
+ggplot(data = penguins) + 
+  geom_boxplot(mapping = aes(x = island, y= bill_depth_mm, color = species)) +
+  facet_wrap(~year)
+```
+
+### Relationship between multiple traits
+
+
+```{r, echo=FALSE}
+ggplot(data = penguins, mapping = aes(x = body_mass_g, y = flipper_length_mm)) + 
+  geom_point(mapping = aes(color = species), shape = 1) +
+  geom_smooth(method = "lm", se = F)
+```
+
+### Sexual dimorphism
+
+```{r}
+penguins %>%
+  ggplot(mapping = aes(x=flipper_length_mm, y=sex, color=sex)) +
+  geom_boxplot(outlier.alpha = 0, alpha=0) +
+  coord_flip() +
+  facet_wrap(~species)
+```
