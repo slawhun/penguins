@@ -1,9 +1,7 @@
-name: "penguins"
+name: "Palmer Penguins Data Exploration"
 navbar:
-  title: "Palmer Penguins Data Plots"
+  title: "Index"
   left:
-    - text: "index"
-      href: index.html
     - text: "single_trait"
       href: single_trait.html
     - text: "multiple_traits"
