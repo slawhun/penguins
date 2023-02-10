@@ -1,0 +1,13 @@
+name: "penguins"
+navbar:
+  title: "Palmer Penguins Data Plots"
+  left:
+    - text: "index"
+      href: index.html
+    - text: "single_trait"
+      href: single_trait.html
+    - text: "multiple_traits"
+      href: multiple_traits.html
+    - text: "sexual_dimorphism"
+      href: sexual_dimorphism.html
+output_dir: "."
