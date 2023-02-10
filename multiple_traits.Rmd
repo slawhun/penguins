@@ -1,0 +1,23 @@
+---
+title: "Multiple Traits"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Data
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+### Relationship between multiple traits
+
+```{r, echo=FALSE}
+ggplot(data = penguins, mapping = aes(x = body_mass_g, y = flipper_length_mm)) + 
+  geom_point(mapping = aes(color = species), shape = 1) +
+  geom_smooth(method = "lm", se = F)
+```

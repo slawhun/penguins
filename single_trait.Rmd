@@ -1,0 +1,23 @@
+---
+title: "Single Trait"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Data
+
+```{r}
+library(palmerpenguins)
+library(tidyverse)
+```
+
+### Single trait distribution
+
+```{r}
+ggplot(data = penguins) + 
+  geom_boxplot(mapping = aes(x = island, y= bill_depth_mm, color = species)) +
+  facet_wrap(~year)
+```
