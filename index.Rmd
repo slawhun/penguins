@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 ![](https://news.stonybrook.edu/wp-content/uploads/2022/01/gentoo-penguins.jpg){width=40%}
 
