@@ -1,6 +1,6 @@
-name: "Plots"
+name: "Palmer Peguins Data Plots"
 navbar:
-  title: "Plots"
+  title: "Palmer Peguins Data Plots"
   left:
     - text: "single_trait"
       href: single_trait.html
