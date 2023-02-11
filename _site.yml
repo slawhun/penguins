@@ -1,6 +1,6 @@
 name: "Plots"
 navbar:
-  title: "Palmer Penguins Plots"
+  title: "Plots"
   left:
     - text: "single_trait"
       href: single_trait.html
